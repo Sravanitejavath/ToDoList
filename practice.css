@@ -1,0 +1,92 @@
+
+
+.heading{
+           width:100%;
+           padding:10px;
+           min-height: 100vh;
+           background-image:url('pic1.webp');
+           background-size:cover;
+}
+.items{
+       width:100%;
+       background:lightgoldenrodyellow;
+       margin:100px auto 20px;
+       padding:40px;
+       max-width:500px;
+       border-radius:15px;
+}
+.items h1{
+      font-size:18px;
+      margin-bottom:20px;
+      font-family:cursive;
+      color:crimson;
+}
+.heading2{
+        display:flex;
+        justify-content: space-between;
+        align-items:center;
+        background-color:aquamarine;
+        border-radius:30px;
+        padding-left:20px;
+        margin-left:25px;
+}
+input{
+        flex:1;
+        border:none;
+        outline:none;
+        background:transparent;
+        padding:10px;
+        font-weight: 16px;
+        font-family:cursive;
+}
+button{
+         border:none;
+         outline:none;
+         padding:10px 30px;
+         cursor:pointer;
+         border-radius:30px;
+         background:pink;
+         font-family: cursive;
+}
+ul li{
+      list-style: none;
+      font-size:15px;
+      padding:12px 8px 12px 50px;
+      user-select: none;
+      cursor:pointer;
+      position:relative;
+      font-family:cursive;
+      font-style: italic;
+}
+ul li::before{
+         content: '';
+         position:absolute;
+         height:20px;
+         width:20px;
+         border-radius:50%;
+         background-image:url('uncheck1.png');
+         background-size:cover;
+         top:12px;
+         left:8px;
+}
+ul li.checked{
+            color:chocolate;
+            text-decoration: line-through;
+}
+ul li.checked::before{
+         background-image:url('check1.png');
+}
+ul li span{
+         position:absolute;
+         right:0;
+         top:5px;
+         font-size:22px;
+         height:40px;
+         width:40px;
+         border-radius:50%;
+         line-height:40px;
+         text-align:center;
+}
+ul li span:hover{
+         background: darksalmon;
+}
